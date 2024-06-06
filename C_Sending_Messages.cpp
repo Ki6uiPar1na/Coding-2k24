@@ -1,8 +1,8 @@
 /*____________________________________________________
 |Author: Ki6ui-Par1na
-|Date: 2024/05/17
-|Time: 21:00:14
-|Problem: cc_b
+|Date: 2024/06/07
+|Time: 02:02:02
+|Problem: C_Sending_Messages
 |____________________________________________________*/
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,14 +13,19 @@ using namespace std;
 #define tc ll t; cin >> t; while(t--)
 void solve() {
     tc{
-        int n = 3;
-        vector<int>  v(3);
-        for(auto &i : v);
-        int cn0 = count(v.begin(), v.end(), 0);
-        int ans = 0;
-        if(cn0 == 3);
-        
+        ll n, f, a, b; cin >> n >> f >> a >> b;
+        vector<ll> v(n + 1);
+        for(int i = 1; i <= n; i++){
+            cin >> v[i];
+        }
+        for(int i = 1; i <= n; i++){
+            f -= min((a * (v[i] - v[i - 1])), b);
+        }
+        if(f > 0) yes
+        else no
+        // cout << f << endl;
 
+        
     }
 }
 
